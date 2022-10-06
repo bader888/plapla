@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="move app use api TMDB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>move App</title>
+    <!-- normlize css -->
+    <link rel="stylesheet" href="cssFile/normlize.css">
+    <!-- reset css modren -->
+    <link rel="stylesheet" href="cssFile/reset.css">
+    <!-- main link -->
+    <link rel="stylesheet" href="cssFile/style.css">
+    <!-- main js file -->
+    <script defer type="module" src="jsFile/moveApp.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <input type="text" name="search" id="search" placeholder="moveis name">
+                </li>
+                <li>
+                    <button class="filter" id="filterBtn">filter</button>
+                    <button class="filter" id="searchBtn">search</button>
+                </li>
+                <li class="option" id="option">
+                    <ul name="categary" id="categaryContainer">
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container"></section>
+        <!-- show move information -->
+        <section class="oneMoveContainer hide"></section>
+    </main>
+
+    <footer>
+        <section>
+            <button id="prev">prev</button>
+            <span id="count">1</span>
+            <button id="next">next</button>
+        </section>
+    </footer>
+</body>
+
+</html>
